@@ -1,0 +1,20 @@
+﻿<Window x:Class="ModelViewViewModel_Voorbeeld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelViewViewModel_Voorbeeld"
+        mc:Ignorable="d"
+        Title="Les 33: MVVM stappenplan" Height="300" Width="300">
+    <StackPanel>
+        <Button Name="btnStap2" Content="Stap2" Command="{Binding Stap2Command}" Margin="5"/>
+        <Button Name="btnStap3" Content="Stap3" Command="{Binding Stap3Command}" Margin="5"/>
+        <Button Name="btnStap4" Content="Stap4" Command="{Binding Stap4Command}" Margin="5"/>
+        <Button Name="btnStap5" Content="Stap5" Command="{Binding Stap5Command}" Margin="5"/>
+        <Button Name="btnStap6" Content="Stap6" Command="{Binding Stap6Command}" Margin="5"/>
+        <Button Name="btnStap7" Content="Stap7" Command="{Binding Stap7Command}" Margin="5"/>
+        <Button Name="btnStap8" Content="Stap8" Command="{Binding Stap8Command}" Margin="5"/>
+        <Button Name="btnStap9" Content="Stap9" Command="{Binding Stap9Command}" Margin="5"/>
+        <Button Name="btnStap10" Content="Stap10" Command="{Binding Stap9Command}" Margin="5"/>
+    </StackPanel>
+</Window>

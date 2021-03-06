@@ -1,0 +1,45 @@
+﻿<Window x:Class="ModelViewViewModel_Voorbeeld.Stap8.PersoonView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelViewViewModel_Voorbeeld.Stap8"
+        mc:Ignorable="d"
+        Title="PersoonView"   Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Naam:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox Name="txtNaam" Text="{Binding Path=TxtNaam, ValidatesOnDataErrors=true}" Grid.Row="0" Grid.Column="1" Margin="5"/>
+        <TextBlock Name="txbErrorNaam" Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=txtNaam}" Grid.Row="0" Grid.Column="2"/>
+        <TextBlock Text="Leeftijd:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox Name="txtLeeftijd" Text="{Binding Path=TxtLeeftijd, ValidatesOnDataErrors=True}" 
+                 Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <TextBlock Name="txbErrorLeeftijd" Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=txtLeeftijd}" Grid.Row="1" Grid.Column="2"/>
+        <TextBlock Text="Mannelijk:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <CheckBox Name="IsMannelijk" IsChecked="{Binding Path=IsMannelijk}" 
+                  Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <Button Name="btnUpdate" Content="Update"  
+                Command="{Binding Path=UpdateCommand}" 
+                Grid.Row="3" Grid.Column="1" Margin="5"/>
+        <Button Name="btnToon" Content="Toon"  
+                Command="{Binding Path=ToonCommand}" 
+                Grid.Row="4" Grid.Column="0" Margin="5"/>
+
+        <Button Name="btnVeranderInCode" Content="Verander in Code"  
+                Command="{Binding Path=VeranderCommand}" 
+                Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+
+    </Grid>
+</Window>
