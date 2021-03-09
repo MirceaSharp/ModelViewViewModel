@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewViewModel Voorbeeld", "ModelViewViewModel Voorbeeld\ModelViewViewModel Voorbeeld.csproj", "{D6AE438F-4FF7-4D0A-9129-D9CA9F9035F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewViewModel", "ModelViewViewModel\ModelViewViewModel.csproj", "{D6AE438F-4FF7-4D0A-9129-D9CA9F9035F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
