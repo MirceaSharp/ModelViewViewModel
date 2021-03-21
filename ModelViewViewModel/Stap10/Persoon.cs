@@ -21,6 +21,9 @@
 
         public void Verjaar()
         {
+
+
+
             Leeftijd += 1;
         }
 
